@@ -90,7 +90,7 @@
 
 ### 3. 訓練結果
 - batchsize = 32
-- epoch = 13 (達標即停止訓練)
+- epoch = 3 (達標即停止訓練)
 ![alt text](demo_images/Training.png)
 
 ## IV. 評估設計
@@ -103,7 +103,7 @@
 - **標籤轉換：**  
   針對類別 $i$，將真實標籤 (`y_true`) 和預測標籤 (`y_pred`) 轉換為二元形式：
   - 類別 $i$ 被視為 **Positive (1)**  
-  - 其他類別被視為 **Negative (0)** [24, 25]  
+  - 其他類別被視為 **Negative (0)**
 - 轉換後得到 `y_true_binary` 和 `y_pred_binary`，用於二元分類計算。
 
 ---
